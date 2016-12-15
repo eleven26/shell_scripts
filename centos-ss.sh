@@ -14,4 +14,4 @@ config=$(cat <<< EOF
 EOF
 )
 
-echo ${config} > /etc/shadowsocks.json
+echo "${config}" > /etc/shadowsocks.json
