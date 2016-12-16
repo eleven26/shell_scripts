@@ -25,7 +25,7 @@ pip install --upgrade pip
 pip install shadowsocks
 
 # create shadowsocls config
-cat <<EOF | sudo tee ${CONFIG_FILE}
+cat <<EOF | tee "${CONFIG_FILE}"
 {
   "server": "0.0.0.0",
   "server_port": ${SS_PORT},
@@ -35,13 +35,13 @@ cat <<EOF | sudo tee ${CONFIG_FILE}
 EOF
 
 # create service
-cat <<EOF | sudo tee ${SERVICE_FILE}
+cat <<EOF | tee "${SERVICE_FILE}"
 [Unit]
 Description=Shadowsocks
 
 [Service]
 TimeoutStartSec=0
-ExecStart=/usr/bin/ssserver -c ${CONFIG_FILE}
+ExecStart=/usr/bin/ssserver -c "${CONFIG_FILE}"
 
 [Install]
 WantedBy=multi-user.target
