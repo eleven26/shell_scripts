@@ -27,7 +27,7 @@ pip install shadowsocks
 # create shadowsocls config
 cat <<EOF | tee "${CONFIG_FILE}"
 {
-  "server": "0.0.0.0",
+  "server": "${SS_IP}",
   "server_port": ${SS_PORT},
   "password": "${SS_PASSWORD}",
   "method": "${SS_METHOD}"
