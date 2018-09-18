@@ -10,3 +10,5 @@
 
 * 编辑 /etc/frpc.ini 文件, 修改对应配置
 * sudo launchctl load -w /Library/LaunchDaemons/frp.plist
+
+* mac 下开启 ssh 远程登陆, System Preferences -> Sharing -> Remote Login
