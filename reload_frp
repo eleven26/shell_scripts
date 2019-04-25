@@ -1,0 +1,2 @@
+sudo launchctl unload /System/Library/LaunchDaemons/frp_aliyun.plist && sudo launchctl load /System/Library/LaunchDaemons/frp_aliyun.plist
+sudo launchctl unload /System/Library/LaunchDaemons/frp.plist && sudo launchctl load /System/Library/LaunchDaemons/frp.plist
